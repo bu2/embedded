@@ -6,6 +6,7 @@ time (
     echo 'Install some usefull packages'
     PACKAGES=(htop gawk wget git-core diffstat unzip texinfo gcc-multilib build-essential chrpath libsdl1.2-dev xterm)
     apt-get install -y ${PACKAGES[*]}
+    apt-get build-dep -y qemu
 
     echo 'Total time to provisioning VM:'
 )
